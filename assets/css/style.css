@@ -19,8 +19,13 @@ html {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 46px;
     background-color: #000;
+    z-index: 9999;
 } 
 
 #header .search-btn {
@@ -99,12 +104,41 @@ html {
 }
 
 #slider {
-    min-height: 500px;
-    background-color: #333;
+    position: relative;
+    margin-top: 46px;
+    width: 100%;
+    padding-top: 50%; /* 50% chiều ngang của chính nó*/
+    background: url('/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    /* các cách căn giữa:  */
+        /* cách 1:  */
+    right: 0;
+    left: 0;
+    text-align: center;
+        /* cách 2:
+        width: 100%;
+        text-align: center; */
+    /* cách 3 khi có position
+        left: 50%;
+        transform: translateX(-50%); 
+        text-align: center;
+    */
+    
+}
+#slider .text-content .text-heading {
+}
+
+#slider .text-content .text-description {
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
 
 #content {
-
 }
 
 #footer {
