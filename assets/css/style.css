@@ -141,6 +141,33 @@ html {
 #content {
 }
 
+#content .content-section {
+    width: 800px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+#content .section-sub-heading {
+    text-align: center;
+    font-style: italic;
+    font-family: "Lato", sans-serif;
+    opacity: 0.6; /* làm mờ chữ có giá trị từ [0;1] */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#content .about-text {
+    line-height: 1.4; /* Chỉnh độ cao của một dòng: 1.4 cho tiếng Anh và 1.6 cho tiếng việt*/
+}
+
 #footer {
 
 }
