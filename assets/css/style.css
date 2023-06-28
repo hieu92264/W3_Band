@@ -167,6 +167,23 @@ html {
 #content .about-text {
     line-height: 1.4; /* Chỉnh độ cao của một dòng: 1.4 cho tiếng Anh và 1.6 cho tiếng việt*/
 }
+#content .member-list {
+    margin-top: 48px;
+    overflow: auto; /* sửa lỗi height = 0 khi sử dụng float cho các phần tử con */
+}
+#content .member-item {
+    float: left;  /*di chuyen cac phan tu sang ben trai cua phan tu cha */
+    text-align: center;
+    width: calc(100% / 3);
+}
+#content .member-name {
+    font-style: 15px;
+}
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px; /* bo goc */
+}
 
 #footer {
 
